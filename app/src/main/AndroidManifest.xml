@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kata.kidspe">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="KATA"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.kata.kidspe.AnimalCategories" />
+        <activity
+            android:name="com.kata.kidspe.Welcome"
+             />
+        <activity android:name="com.kata.kidspe.SlideImage"
+            android:exported="true"/>
+        <activity android:name="com.kata.kidspe.FinishKuiz" />
+        <activity android:name="com.kata.kidspe.StartKuiz" />
+        <activity android:name="com.kata.kidspe.Rekod" />
+        <activity android:name="com.kata.kidspe.Kuiz" />
+        <activity android:name="com.kata.kidspe.ViewImageActivity"  />
+        <activity android:name="com.kata.kidspe.ListItemActivity" />
+        <activity android:name="com.kata.kidspe.MainActivity" />
+        <activity
+            android:name="com.kata.kidspe.SplashScreen"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

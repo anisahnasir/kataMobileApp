@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartKuiz">
+
+
+
+    <TextView
+        android:id="@+id/scoreNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#e6005c"
+        android:textSize="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+
+        />
+
+
+    <WebView
+        android:id="@+id/gambarKuiz"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/micQuiz"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_mic_24"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/testSuara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="800dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/quizCorrect"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_correct"
+        android:layout_marginTop="8000dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationMic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="microphone.json"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/quizWrong"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_wrong"
+        android:layout_marginTop="800dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_next"
+        android:onClick="nextQuestion"
+        android:layout_marginTop="440dp"
+        android:layout_marginStart="280dp"
+        />
+
+
+
+</RelativeLayout>
